@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datos formulario</title>
+</head>
+<body style="background-color:powderblue;">
+	<h1>Formulario</h1>
+
+	<form id="frm1">
+		Nombre: <input type="text" name="name" id="name"><br>
+		Mail: <input type="text" name="email" id="email"><br><br>
+	</form>
+	<button onclick="myFunction()">Mostrar</button>
+
+	<p id="mostrarNombre"></p>
+	<p id="mostrarMail"></p>
+
+	<script>
+		function myFunction() {
+
+			var nombre = document.getElementById("name").value;
+			var correo = document.getElementById("email").value;
+			var espacio1 = document.getElementById('mostrarNombre');
+			var espacio2 = document.getElementById('mostrarMail');
+
+			espacio1.innerHTML=nombre;
+			espacio2.innerHTML=correo;
+		}
+	</script>
+</body>
+</html>
